@@ -1,3 +1,6 @@
+##Computes the inverse of a matrix
+
+#Cache matrix to be reused easily, since the inverse doesnt change between calc
 
 CacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -14,7 +17,7 @@ CacheMatrix <- function(x = matrix()) {
        getInverse = getInverse)
 }
 
-#Solving...
+#Compute the inverse of the matrix
 
 cacheSolve <- function(x, ...) {
   inv <- x$getInverse()
